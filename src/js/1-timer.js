@@ -2,6 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import iconUrl from "../img/close-circle-svgrepo-com.svg";
 
 const startBtn = document.querySelector("[data-start]");
 const dateInput = document.querySelector("#datetime-picker");
@@ -30,7 +31,7 @@ const options = {
         const now = new Date()   
         if (selectedDate <= now) {
             iziToast.warning({
-                iconUrl: './img/close-circle-svgrepo-com.svg',
+                iconUrl,
                 iconColor: 'black',
                 message: 'Please choose the date in the future',
                 messageColor: 'white',
@@ -64,6 +65,7 @@ function btnClickHandler() {
         if (delta <= 0) { 
             clearInterval(timerId)
             updateTimerDisplay(0);
+            dateInput.disabled = false;
             return;
         }
         updateTimerDisplay(delta);
