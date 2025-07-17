@@ -30,7 +30,7 @@ const options = {
         const now = new Date()   
         if (selectedDate <= now) {
             iziToast.warning({
-                iconUrl: 'img/close-circle-svgrepo-com.svg',
+                iconUrl: './img/close-circle-svgrepo-com.svg',
                 iconColor: 'black',
                 message: 'Please choose the date in the future',
                 messageColor: 'white',
