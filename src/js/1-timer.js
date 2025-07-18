@@ -102,6 +102,7 @@ function convertMs(ms) {
 Object.assign(dateInput.style, {
     marginTop: `${20}px`,
     height: `${25}px`,
+    marginLeft: `${25}px`,
 });
 
 Object.assign(startBtn.style, {
@@ -111,7 +112,8 @@ Object.assign(startBtn.style, {
 Object.assign(timerContainer.style, {
     display: 'flex',
     marginTop: `${20}px`,
-    gap: `${10}px`
+    gap: `${10}px`,
+    marginLeft: `${25}px`,
 });
   
 [parentDaysSpan, parentHoursSpan, parentMinuteSpan, parentSecondSpan].forEach(el =>  

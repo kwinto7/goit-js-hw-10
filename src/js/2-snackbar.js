@@ -1,5 +1,5 @@
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+import "izitoast/dist/css/iziToast.min.css";
 
 const form = document.querySelector('.form');
 const label = document.querySelector('.form label')
@@ -32,6 +32,7 @@ promise
             messageColor: 'white',
             color: '#38ca27ff',
             close: false,
+            icon: null
         });
     })
     .catch(delay => {
@@ -42,26 +43,28 @@ promise
             messageColor: 'white',
             color: '#d65a25ff',
             close: false,
+            icon: null
         });
     });
 });
 
 Object.assign(form.style, {
     marginTop: `${24}px`,
+    width: `${261}px`,
     fontFamily: 'Montserrat, sans-serif',
-    width: 250,
+    padding: `${25}px`,
 });
 
 Object.assign(input.style, {
     display: 'block',
     marginTop: `${4}px`,
-    width: 250,
     height: `${32}px`,
     marginBottom: `${8}px`,
+    width: `${250}px`,
 });
 
 Object.assign(button.style, {
     marginTop: `${8}px`,
-    width: 250,
-    height:`${24}px`,
+    width: `${260}px`,
+    height:`${30}px`,
 });

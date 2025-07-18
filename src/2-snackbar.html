@@ -1,23 +1,36 @@
-<div><a href="./index.html">Back</a></div>
-<form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" required />
-  </label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/2-snackbar.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div><a href="./index.html">Back</a></div>
 
-  <fieldset>
-    <legend>State</legend>
-    <label>
-      <input type="radio" name="state" value="fulfilled" required />
-      Fulfilled
-    </label>
-    <label>
-      <input type="radio" name="state" value="rejected" required />
-      Rejected
-    </label>
-  </fieldset>
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
 
-  <button type="submit">Create notification</button>
-</form>
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
 
-<script type="module" src="./js/2-snackbar.js"></script>
+        <button type="submit">Create notification</button>
+      </form>
+    </main>
+  </body>
+</html>
